@@ -1,16 +1,33 @@
-<html>
+<!DOCTYPE html>  
+<html> 
+    <title> 
+            SI Calci
+    </title>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+    </head> 
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+    <body>    
+        <div class="maindiv"> 
 
-        <button onclick="compute()">Compute</button>
-    </body>
+        <h1>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Simple Interest Calculator</h1><br>
+
+        <strong>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Amount</strong>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="number"  id="principal">  <br/><br><br> 
+
+        <strong>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Interest Rate</strong>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input onchange="updateRate()"type="range"  id="rate" step="0.5" min="1" max="20" value="10.25"> 
+        <span id="rate_val">10.25%</span> <br/><br><br> 
+
+        <strong>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;No. of Years&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</strong><select id="years"> <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select> <br/><br><br> 
+
+        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<button onclick="compute()">Compute Interest</button></br><br>
+        <span id="result"></span> <br>
+
+    </body> 
+
+
+<footer> 
+        <br>&#169; This Calculator belongs to Sophia Mary.R
+</footer>  
+</div>
 </html>
